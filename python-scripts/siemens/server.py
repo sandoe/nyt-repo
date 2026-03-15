@@ -107,7 +107,7 @@ class PLCSimulator:
 # --- Entry point for scriptet ---
 if __name__ == "__main__":
     # Opret instans af vores PLC
-    plc = PLCSimulator(port=102, io_bytes=2, mk_bytes=4)
+    plc = PLCSimulator(port=102, io_bytes=10, mk_bytes=10)
     
     # Håndter uventede nedbrud eller system-afbrydelser (SIGTERM)
     def signal_handler(sig, frame):
